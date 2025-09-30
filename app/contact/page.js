@@ -30,6 +30,14 @@ export default function Contact() {
       question: "What are your business hours?",
       answer: "Our office is open Monday through Friday from 9:00 AM to 6:00 PM, and Saturday from 10:00 AM to 2:00 PM. We are closed on Sundays and major holidays."
     },
+     {
+      question: "What are your business hours?",
+      answer: "Our office is open Monday through Friday from 9:00 AM to 6:00 PM, and Saturday from 10:00 AM to 2:00 PM. We are closed on Sundays and major holidays."
+    },
+     {
+      question: "What are your business hours?",
+      answer: "Our office is open Monday through Friday from 9:00 AM to 6:00 PM, and Saturday from 10:00 AM to 2:00 PM. We are closed on Sundays and major holidays."
+    },
     {
       question: "How quickly can I expect a response to my inquiry?",
       answer: "We strive to respond to all inquiries within 24-48 business hours. For urgent matters, we recommend calling our main office line."
@@ -58,31 +66,27 @@ export default function Contact() {
       </section> */}
 
 
-      <section className="relative h-[500px] bg-gray-900">
-  {/* Background Image with Overlay */}
-  <div className="absolute inset-0">
-    <img
-      src="https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg"
-      alt="Laboratory researcher working"
-      className="w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-  </div>
+     <section className="relative h-[450px] overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg"
+            alt="Contact Us"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 to-green-900/90"></div>
+        </div>
 
-  {/* Content */}
-  <div className="relative h-full flex items-center">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
-      <h1 className="text-5xl md:text-6xl font-bold mb-6">
-        <span className="text-teal-800">Get in</span>{' '}
-        <span className="text-green-600">Touch</span>
-      </h1>
-      <p className="text-xl text-gray-800 max-w-3xl mx-auto">
-        Have questions about our services or interested in collaboration? We're here to help.
-      </p>
-    </div>
-  </div>
-</section>
-
+        <div className="relative h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+              Let's <span className="text-yellow-300">Connect</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+              Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            </p>
+          </div>
+        </div>
+      </section>
 
 
       {/* Contact Information Section */}

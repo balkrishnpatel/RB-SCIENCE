@@ -64,7 +64,7 @@ export default function Events() {
   return (
     <div className="min-h-screen pt-20">
       {/* Events Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-teal-600 to-green-500 py-20">
+      {/* <section className="bg-gradient-to-br from-blue-600 via-teal-600 to-green-500 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Upcoming Research Events
@@ -73,6 +73,29 @@ export default function Events() {
             Join leading researchers, innovators, and industry experts at our prestigious bioscience events. 
             Discover breakthrough research, network with peers, and advance your scientific career.
           </p>
+        </div>
+      </section> */}
+
+
+        <section className="relative h-[450px] overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg"
+            alt="Contact Us"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 to-green-900/90"></div>
+        </div>
+
+        <div className="relative h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+              Upcoming <span className="text-yellow-300">Research Events</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+              Join leading researchers, innovators, and industry experts at our prestigious bioscience events. Discover breakthrough research, network with peers, and advance your scientific career.
+            </p>
+          </div>
         </div>
       </section>
 

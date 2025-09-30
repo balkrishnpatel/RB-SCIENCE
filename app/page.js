@@ -1,31 +1,31 @@
 import Hero from '@/components/Hero'
-import ConferenceBanner from '@/components/ConferenceBanner'
-import Certifications from '@/components/Certifications'
-import Services from '@/components/Services'
-import Events from '@/components/Events'
-import Career from '@/components/Career'
-import Values from '@/components/Values'
-import TrainingPrograms from '@/components/TrainingPrograms'
-import Statistics from '@/components/Statistics'
-import ContactForm from '@/components/ContactForm'
-import Blog from '@/components/Blog'
-import Testimonials from '@/components/Testimonials'
+import HomeConferenceBanner from '@/components/HomeConferenceBanner'
+import HomeCertifications from '@/components/HomeCertifications'
+import HomeServices from '@/components/HomeServices'
+import HomeEvents from '@/components/HomeEvents'
+import HomeCareer from '@/components/HomeCareer'
+import HomeValues from '@/components/HomeValues'
+import HomeTrainingPrograms from '@/components/HomeTrainingPrograms'
+import HomeStatistics from '@/components/HomeStatistics'
+import HomeContactForm from '@/components/HomeContactForm'
+import HomeBlog from '@/components/HomeBlog'
+import HomeTestimonials from '@/components/HomeTestimonials'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Hero />
-      <ConferenceBanner />
-      <Certifications />
-      <Services />
-      <Events />
-      <Career />
-      <Values />
-      <TrainingPrograms />
-      <Statistics />
-      <ContactForm />
-      <Blog />
-      <Testimonials />
+      <HomeConferenceBanner />
+      <HomeCertifications />
+      <HomeServices />
+      <HomeEvents />
+      <HomeCareer />
+      <HomeValues />
+      <HomeTrainingPrograms />
+      <HomeStatistics />
+      <HomeContactForm />
+      <HomeBlog />
+      <HomeTestimonials />
     </main>
   )
 }

@@ -249,7 +249,7 @@ export default function About() {
      
 
 
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -259,10 +259,10 @@ export default function About() {
           </div>
 
           <div className="relative">
-            {/* Vertical Timeline Line */}
+            
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-green-500"></div>
             
-            {/* Timeline Items */}
+          
             <div className="space-y-12">
               {timeline.map((event, index) => (
                 <div key={index} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
@@ -274,7 +274,7 @@ export default function About() {
                     </div>
                   </div>
                   
-                  {/* Center Circle */}
+                 
                   <div className="w-2/12 flex justify-center z-10">
                     <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-xl font-bold border-4 border-white shadow-lg">
                       {event.year.slice(-2)}
@@ -287,7 +287,49 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+      <section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold mb-4">
+        Our <span className="text-green-600">Journey</span>
+      </h2>
+      <p className="text-xl text-gray-600">Key milestones in our research excellence</p>
+    </div>
+
+    <div className="relative">
+      {/* Vertical Timeline Line - Center on desktop, left on mobile */}
+      <div className="absolute left-8 md:left-1/2 md:transform md:-translate-x-1/2 h-full w-1 bg-green-500"></div>
+      
+      {/* Timeline Items */}
+      <div className="space-y-12">
+        {timeline.map((event, index) => (
+          <div key={index} className={`flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex-row`}>
+            {/* Content Card */}
+            <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right md:pr-8' : 'md:text-left md:pl-8'} pl-20 md:pl-0`}>
+              <div className="bg-white p-6 rounded-2xl shadow-lg">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">{event.year}</h3>
+                <h4 className="text-xl font-bold text-gray-900 mb-3">{event.title}</h4>
+                <p className="text-gray-600 leading-relaxed">{event.description}</p>
+              </div>
+            </div>
+            
+            {/* Center Circle */}
+            <div className="absolute left-0 md:static md:w-2/12 flex md:justify-center z-10">
+              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-xl font-bold border-4 border-white shadow-lg">
+                {event.year.slice(-2)}
+              </div>
+            </div>
+            
+            <div className="hidden md:block w-5/12"></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
 
       {/* Core Values Section */}
